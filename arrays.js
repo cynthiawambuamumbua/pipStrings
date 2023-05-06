@@ -28,16 +28,24 @@ console.log(SumPeople(people))
 // Using JS functions and an array of numbers, return positive if an element 
 // within the array is positive, negative if an element is negative, else zero
 function arrayNumbers(array){
+    if(Number>0){
+        console.log("positive")
+    }
+    else if(Number<0){
+        console.log("negative")
+    }
+    else{
+        console.log("zero")
+    }
 
 }
+Number=6
 
 // Given an array of objects, where each object represents an employee
 //  with an id, name, and salary property, write a function that 
 // returns a new array of employee objects sorted by their salary in ascending order.
 function Employees(array){
-    let salary=a
-    let employeeObject=b
-    let Employees = array.slice().sort((a, b));
+    let Employees = array.slice().sort((a, b)=>a.salary-b.salary);
     return Employees;
 
 }
@@ -47,5 +55,5 @@ const employees = [
     { id: 3, name: 'judie', salary: 8975000 },
     { id: 4, name: 'weru', salary: 1000 },
   ];
-//   const Employees = salary(employees);
-  console.log(Employees(array));
+
+    console.log(Employees(array));
